@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 import pickle
 
-loaded_model = pickle.load(open('D:/pythonn alll/Mice Protein Expression/ml_model_DPL/DPL_spyder/trained_model3.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model3.sav', 'rb'))
 
 def mice_class_predict(input_data):
     input_data_as_numpy_array = np.asarray(input_data[:-1])
